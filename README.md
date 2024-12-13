@@ -15,6 +15,7 @@ A simple PHP authentication system with password hashing. This project is suitab
 
 ## Installation
 1. Change the login credentials for the database in the config.php file.
+2. In database:
 ```sql
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,         -- Auto-incrementing primary key for each user
