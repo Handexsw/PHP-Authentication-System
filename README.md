@@ -15,4 +15,13 @@ A simple PHP authentication system with password hashing. This project is suitab
 
 ## Installation
 1. Change the login credentials for the database in the config.php file.
-2. Dashboard.php only has a sample page where you can only log in with an account. If there is another insert <?php include 'isnotlogged.php' ?> 
+```sql
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,         -- Auto-incrementing primary key for each user
+    session VARCHAR(255),          -- Session information, to manage user sessions
+    name VARCHAR(255) NOT NULL,    -- User's name, cannot be null
+    password VARCHAR(255) NOT NULL -- User's password, cannot be null 
+);
+```
+
+3. Dashboard.php only has a sample page where you can only log in with an account. If there is another insert <?php include 'isnotlogged.php' ?> 
